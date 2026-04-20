@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFG Real Estate — Developerské projekty</title>
+  <meta name="description" content="AFG Real Estate — moderní developerské projekty s důrazem na kvalitu, design a udržitelnost." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-afg">AFG</span>
+        <span class="nav__logo-re">Real Estate</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#o-nas">O nás</a>
+        <a href="#projekty">Projekty</a>
+        <a href="#sluzby">Služby</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <a href="#kontakt" class="btn btn--outline nav__cta">Kontaktujte nás</a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="container hero__content">
+      <p class="hero__eyebrow reveal">Developerské projekty · Praha &amp; okolí</p>
+      <h1 class="hero__title reveal">
+        Stavíme místa,<br />
+        kde chcete žít.
+      </h1>
+      <p class="hero__sub reveal">
+        Navrhujeme a realizujeme rezidenční i komerční projekty<br class="hide-mob" />
+        s důrazem na architekturu, kvalitu a dlouhodobou hodnotu.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#projekty" class="btn btn--primary">Naše projekty</a>
+        <a href="#o-nas" class="btn btn--ghost">Zjistit více</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span></span>
+    </div>
+    <div class="hero__stats">
+      <div class="container hero__stats-row">
+        <div class="stat">
+          <span class="stat__num" data-target="24">0</span>
+          <span class="stat__label">Dokončených projektů</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="1200">0</span>
+          <span class="stat__label">Bytových jednotek</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="15">0</span>
+          <span class="stat__label">Let zkušeností</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="98">0</span>
+          <span class="stat__label">% spokojených klientů</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O NÁS -->
+  <section class="section" id="o-nas">
+    <div class="container about">
+      <div class="about__text">
+        <p class="section__eyebrow reveal">O společnosti</p>
+        <h2 class="section__title reveal">Více než developer —<br />váš partner pro kvalitní bydlení</h2>
+        <p class="section__body reveal">
+          AFG Real Estate je česká developerská společnost se specializací na prémiové rezidenční a komerční projekty. Od prvotní vize přes architektonický návrh až po předání klíčů — stojíme po vašem boku na každém kroku.
+        </p>
+        <p class="section__body reveal">
+          Věříme, že kvalitní architektura a promyšlené prostory mají přímý dopad na kvalitu života. Proto každý projekt přistupujeme individuálně a s maximální péčí o detail.
+        </p>
+        <ul class="about__pillars reveal">
+          <li><span class="pillar__icon">◆</span> Certifikovaná kvalita stavby</li>
+          <li><span class="pillar__icon">◆</span> Udržitelné materiály &amp; technologie</li>
+          <li><span class="pillar__icon">◆</span> Transparentní komunikace</li>
+          <li><span class="pillar__icon">◆</span> Precizní termíny dokončení</li>
+        </ul>
+      </div>
+      <div class="about__visual reveal">
+        <div class="about__img-wrap">
+          <div class="about__img about__img--main"></div>
+          <div class="about__img about__img--accent"></div>
+          <div class="about__badge">
+            <span class="about__badge-num">15+</span>
+            <span class="about__badge-text">let na trhu</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJEKTY -->
+  <section class="section section--alt" id="projekty">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow reveal">Portfolio</p>
+        <h2 class="section__title reveal">Vybrané projekty</h2>
+        <p class="section__intro reveal">Každý projekt je jedinečný příběh — od prvního výkresu po slavnostní otevření.</p>
+      </div>
+
+      <div class="projects__filter reveal">
+        <button class="filter__btn filter__btn--active" data-filter="all">Vše</button>
+        <button class="filter__btn" data-filter="rezidenční">Rezidenční</button>
+        <button class="filter__btn" data-filter="komerční">Komerční</button>
+        <button class="filter__btn" data-filter="rekonstrukce">Rekonstrukce</button>
+      </div>
+
+      <div class="projects__grid">
+
+        <article class="project-card reveal" data-category="rezidenční">
+          <div class="project-card__img project-card__img--1"></div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Rezidenční</span>
+            <h3 class="project-card__title">Residence Vinohrady</h3>
+            <p class="project-card__meta">Praha 2 · 48 bytů · 2024</p>
+            <p class="project-card__desc">Prémiový bytový dům v srdci Vinohrad s nadstandardním vybavením a střešní terasou.</p>
+            <a href="#kontakt" class="project-card__link">Více informací →</a>
+          </div>
+        </article>
+
+        <article class="project-card project-card--featured reveal" data-category="rezidenční">
+          <div class="project-card__img project-card__img--2"></div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Rezidenční</span>
+            <h3 class="project-card__title">Park Residence Letňany</h3>
+            <p class="project-card__meta">Praha 9 · 120 bytů · 2023</p>
+            <p class="project-card__desc">Moderní bytový komplex s parkem, garážemi a zázemím pro celou rodinu v klidné lokalitě.</p>
+            <a href="#kontakt" class="project-card__link">Více informací →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="komerční">
+          <div class="project-card__img project-card__img--3"></div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Komerční</span>
+            <h3 class="project-card__title">Business Hub Karlín</h3>
+            <p class="project-card__meta">Praha 8 · 3 200 m² · 2023</p>
+            <p class="project-card__desc">Moderní kancelářský prostor třídy A s flexibilními layouty a zelenou certifikací BREEAM.</p>
+            <a href="#kontakt" class="project-card__link">Více informací →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="rekonstrukce">
+          <div class="project-card__img project-card__img--4"></div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Rekonstrukce</span>
+            <h3 class="project-card__title">Vila Smíchov</h3>
+            <p class="project-card__meta">Praha 5 · 6 bytů · 2022</p>
+            <p class="project-card__desc">Citlivá rekonstrukce historické vily s respektem k původní architektuře a maximem moderního komfortu.</p>
+            <a href="#kontakt" class="project-card__link">Více informací →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="rezidenční">
+          <div class="project-card__img project-card__img--5"></div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Rezidenční</span>
+            <h3 class="project-card__title">Dvůr Říčany</h3>
+            <p class="project-card__meta">Říčany · 34 domů · 2025</p>
+            <p class="project-card__desc">Rodinné domy s vlastními zahradami v klidném prostředí — 15 minut od Prahy.</p>
+            <a href="#kontakt" class="project-card__link">Více informací →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="komerční">
+          <div class="project-card__img project-card__img--6"></div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Komerční</span>
+            <h3 class="project-card__title">Retail Park Beroun</h3>
+            <p class="project-card__meta">Beroun · 5 800 m² · 2022</p>
+            <p class="project-card__desc">Obchodní centrum s optimalizovaným retail mixem a nadstandardními parkovacími kapacitami.</p>
+            <a href="#kontakt" class="project-card__link">Více informací →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects__cta reveal">
+        <a href="#kontakt" class="btn btn--primary">Zobrazit všechny projekty</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCES -->
+  <section class="section" id="sluzby">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow reveal">Jak pracujeme</p>
+        <h2 class="section__title reveal">Náš proces</h2>
+        <p class="section__intro reveal">Od první konzultace po předání klíčů — strukturovaný přístup s jasnou komunikací.</p>
+      </div>
+
+      <div class="process">
+        <div class="process__item reveal">
+          <div class="process__num">01</div>
+          <div class="process__body">
+            <h3>Analýza &amp; vize</h3>
+            <p>Nasloucháme vašim potřebám, analyzujeme lokalitu a definujeme vizi projektu. Výsledkem je jasný brief pro architekty.</p>
+          </div>
+        </div>
+        <div class="process__item reveal">
+          <div class="process__num">02</div>
+          <div class="process__body">
+            <h3>Projekt &amp; povolení</h3>
+            <p>Spolupracujeme s renomovanými architektonickými kancelářemi. Zajišťujeme veškerá povolení a administrativu.</p>
+          </div>
+        </div>
+        <div class="process__item reveal">
+          <div class="process__num">03</div>
+          <div class="process__body">
+            <h3>Realizace</h3>
+            <p>Stavíme s prověřenými dodavateli. Průběžně informujeme o postupu prací a dodržujeme dohodnuté termíny.</p>
+          </div>
+        </div>
+        <div class="process__item reveal">
+          <div class="process__num">04</div>
+          <div class="process__body">
+            <h3>Předání &amp; péče</h3>
+            <p>Pečlivě předáme každou jednotku a zůstáváme k dispozici i po dokončení projektu v rámci záruky a servisu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow reveal">Reference</p>
+        <h2 class="section__title reveal" style="color:#fff;">Co říkají naši klienti</h2>
+      </div>
+      <div class="testimonials">
+        <blockquote class="testimonial reveal">
+          <p class="testimonial__text">"S AFG Real Estate jsme prošli celým procesem koupě bytu bez stresu. Komunikace byla vždy rychlá a transparentní. Byt splnil všechna naše očekávání."</p>
+          <footer class="testimonial__author">
+            <div class="testimonial__avatar testimonial__avatar--1"></div>
+            <div>
+              <strong>Markéta &amp; Tomáš Horáček</strong>
+              <span>Residence Vinohrady</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p class="testimonial__text">"Investice do projektu Business Hub Karlín se nám vyplatila nad očekávání. Profesionální tým, výborná lokalita a precizní provedení stavby."</p>
+          <footer class="testimonial__author">
+            <div class="testimonial__avatar testimonial__avatar--2"></div>
+            <div>
+              <strong>Ing. Pavel Novák</strong>
+              <span>Investor, Business Hub Karlín</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p class="testimonial__text">"Rekonstrukce vily proběhla přesně podle plánu a výsledek překonal naše představy. Oceňujeme citlivý přístup k historickému objektu."</p>
+          <footer class="testimonial__author">
+            <div class="testimonial__avatar testimonial__avatar--3"></div>
+            <div>
+              <strong>Jana Procházková</strong>
+              <span>Vila Smíchov</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="section" id="kontakt">
+    <div class="container contact">
+      <div class="contact__info reveal">
+        <p class="section__eyebrow">Kontakt</p>
+        <h2 class="section__title">Pojďme mluvit<br />o vašem projektu</h2>
+        <p class="section__body">Rádi zodpovíme vaše dotazy, domluvíme osobní schůzku nebo vám poskytneme nezávaznou konzultaci.</p>
+        <ul class="contact__list">
+          <li>
+            <span class="contact__icon">✉</span>
+            <a href="mailto:info@afgreal.cz">info@afgreal.cz</a>
+          </li>
+          <li>
+            <span class="contact__icon">✆</span>
+            <a href="tel:+420800000000">+420 800 000 000</a>
+          </li>
+          <li>
+            <span class="contact__icon">⌖</span>
+            <span>Na Příkopě 12, 110 00 Praha 1</span>
+          </li>
+        </ul>
+        <div class="contact__social">
+          <a href="#" aria-label="LinkedIn" class="social__btn">in</a>
+          <a href="#" aria-label="Instagram" class="social__btn">ig</a>
+          <a href="#" aria-label="Facebook" class="social__btn">fb</a>
+        </div>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="name">Jméno a příjmení *</label>
+            <input type="text" id="name" name="name" placeholder="Jan Novák" required />
+          </div>
+          <div class="form__group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="jan@email.cz" required />
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone" placeholder="+420 xxx xxx xxx" />
+        </div>
+        <div class="form__group">
+          <label for="interest">Zájem o</label>
+          <select id="interest" name="interest">
+            <option value="">Vyberte možnost</option>
+            <option>Koupě bytu / domu</option>
+            <option>Komerční prostory</option>
+            <option>Investice</option>
+            <option>Spolupráce / podnět</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="message">Zpráva *</label>
+          <textarea id="message" name="message" rows="4" placeholder="Napište nám, s čím vám můžeme pomoci…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Odeslat zprávu</button>
+        <p class="form__note">Odesláním formuláře souhlasíte se zpracováním osobních údajů dle <a href="#">GDPR</a>.</p>
+        <div class="form__success" id="formSuccess" hidden>
+          ✓ Děkujeme! Ozveme se vám do 24 hodin.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-afg">AFG</span>
+        <span class="nav__logo-re">Real Estate</span>
+        <p>Stavíme místa, kde chcete žít.</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#o-nas">O nás</a>
+        <a href="#projekty">Projekty</a>
+        <a href="#sluzby">Služby</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <div class="footer__legal">
+        <span>© 2026 AFG Real Estate s.r.o.</span>
+        <a href="#">Ochrana osobních údajů</a>
+        <a href="#">Obchodní podmínky</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Zpět nahoru">↑</a>
+
+  <script src="main.js"></script>
+</body>
+</html>
