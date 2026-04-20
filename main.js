@@ -61,22 +61,6 @@
   );
   document.querySelectorAll('.stat__num[data-target]').forEach(el => statsObserver.observe(el));
 
-  /* ── Project filter ── */
-  const filterBtns = document.querySelectorAll('.filter__btn');
-  const cards = document.querySelectorAll('.project-card');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('filter__btn--active'));
-      btn.classList.add('filter__btn--active');
-      const filter = btn.dataset.filter;
-      cards.forEach(card => {
-        const match = filter === 'all' || card.dataset.category === filter;
-        card.classList.toggle('hidden', !match);
-      });
-    });
-  });
-
   /* ── Contact form ── */
   const form = document.getElementById('contactForm');
   const successMsg = document.getElementById('formSuccess');
