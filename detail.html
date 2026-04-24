@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bydlení u Lázní — Rezidenční projekt · AFG Real Estate</title>
+  <meta name="description" content="Moderní rezidenční projekt Bydlení u Lázní — 48 bytových jednotek v klidné lokalitě blízko přírody. Byty 1+kk až 4+kk k prodeji." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="detail.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-afg">AFG</span>
+        <span class="nav__logo-re">Real Estate</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#investice">Investice</a>
+        <a href="index.html#projekty">Projekty</a>
+        <a href="index.html#spoluprace">Spolupráce</a>
+        <a href="index.html#proces">Proces</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <a href="#kontakt" class="btn btn--outline nav__cta">Mám zájem</a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO GALERIE -->
+  <section class="detail-hero" id="top">
+    <div class="detail-hero__gallery" id="gallery">
+      <div class="gallery__main">
+        <img
+          src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1400&auto=format&fit=crop&q=80"
+          alt="Bydlení u Lázní — exteriér"
+          class="gallery__img active"
+          id="galleryMain"
+        />
+        <button class="gallery__arrow gallery__arrow--prev" id="galleryPrev" aria-label="Předchozí">&#8592;</button>
+        <button class="gallery__arrow gallery__arrow--next" id="galleryNext" aria-label="Následující">&#8594;</button>
+        <div class="gallery__counter" id="galleryCounter">1 / 6</div>
+      </div>
+      <div class="gallery__thumbs" id="galleryThumbs">
+        <button class="gallery__thumb active" data-idx="0">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=300&auto=format&fit=crop&q=70" alt="" />
+        </button>
+        <button class="gallery__thumb" data-idx="1">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&auto=format&fit=crop&q=70" alt="" />
+        </button>
+        <button class="gallery__thumb" data-idx="2">
+          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=300&auto=format&fit=crop&q=70" alt="" />
+        </button>
+        <button class="gallery__thumb" data-idx="3">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=300&auto=format&fit=crop&q=70" alt="" />
+        </button>
+        <button class="gallery__thumb" data-idx="4">
+          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=300&auto=format&fit=crop&q=70" alt="" />
+        </button>
+        <button class="gallery__thumb gallery__thumb--more" data-idx="5">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=300&auto=format&fit=crop&q=70" alt="" />
+          <span class="gallery__thumb-label">+3 fotky</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY INFO BAR -->
+  <div class="detail-bar" id="detailBar">
+    <div class="container detail-bar__inner">
+      <div class="detail-bar__info">
+        <span class="detail-bar__name">Bydlení u Lázní</span>
+        <span class="detail-bar__loc">Luhačovice, Zlínský kraj</span>
+      </div>
+      <div class="detail-bar__stats">
+        <span class="detail-bar__stat"><strong>od 3 490 000 Kč</strong></span>
+        <span class="detail-bar__sep"></span>
+        <span class="detail-bar__stat">48 jednotek</span>
+        <span class="detail-bar__sep"></span>
+        <span class="detail-bar__stat">Dokončení Q3 2026</span>
+      </div>
+      <a href="#kontakt" class="btn btn--primary detail-bar__cta">Rezervovat</a>
+    </div>
+  </div>
+
+  <!-- HLAVNÍ OBSAH -->
+  <main class="detail-main">
+    <div class="container detail-layout">
+
+      <!-- LEVÝ SLOUPEC -->
+      <div class="detail-content">
+
+        <!-- BREADCRUMB -->
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="index.html">AFG Real Estate</a>
+          <span>›</span>
+          <a href="index.html#projekty">Projekty</a>
+          <span>›</span>
+          <span>Bydlení u Lázní</span>
+        </nav>
+
+        <!-- PROJEKT HEADING -->
+        <div class="detail-heading reveal">
+          <p class="section__eyebrow">Rezidenční projekt</p>
+          <h1 class="detail-heading__title">Bydlení u Lázní</h1>
+          <div class="detail-heading__meta">
+            <span class="detail-badge detail-badge--available">Prodej zahájen</span>
+            <span class="detail-badge detail-badge--new">Nový projekt</span>
+          </div>
+          <p class="detail-heading__desc">
+            Exkluzivní rezidenční projekt v srdci Luhačovic — lázeňského města obklopeného přírodou Bílých Karpat.
+            48 bytů navržených architektonickým ateliérem s důrazem na světlo, prostor a komfort každodenního života.
+            Každá jednotka disponuje terasou nebo balkonem s výhledem do zeleně.
+          </p>
+        </div>
+
+        <!-- KLÍČOVÉ PARAMETRY -->
+        <div class="detail-params reveal">
+          <div class="detail-param">
+            <span class="detail-param__icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C6.69 2 4 4.69 4 8c0 4.5 6 10 6 10s6-5.5 6-10c0-3.31-2.69-6-6-6zm0 8.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <span class="detail-param__label">Lokalita</span>
+              <span class="detail-param__val">Luhačovice, ul. Lázeňská</span>
+            </div>
+          </div>
+          <div class="detail-param">
+            <span class="detail-param__icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="13" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M2 8h16" stroke="currentColor" stroke-width="1.5"/><path d="M6 2v4M14 2v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <span class="detail-param__label">Dokončení</span>
+              <span class="detail-param__val">3. čtvrtletí 2026</span>
+            </div>
+          </div>
+          <div class="detail-param">
+            <span class="detail-param__icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 17V7l7-4 7 4v10" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><rect x="7" y="11" width="2.5" height="6" rx=".5" fill="currentColor"/><rect x="10.5" y="11" width="2.5" height="6" rx=".5" fill="currentColor"/><path d="M3 17h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <span class="detail-param__label">Typ budovy</span>
+              <span class="detail-param__val">5 podlažní BD, 48 bytů</span>
+            </div>
+          </div>
+          <div class="detail-param">
+            <span class="detail-param__icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4h12v12H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M4 9h12M9 4v12" stroke="currentColor" stroke-width="1.5"/></svg>
+            </span>
+            <div>
+              <span class="detail-param__label">Dispozice</span>
+              <span class="detail-param__val">1+kk až 4+kk</span>
+            </div>
+          </div>
+          <div class="detail-param">
+            <span class="detail-param__icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <span class="detail-param__label">Cena od</span>
+              <span class="detail-param__val">3 490 000 Kč</span>
+            </div>
+          </div>
+          <div class="detail-param">
+            <span class="detail-param__icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10h10M10 5v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/></svg>
+            </span>
+            <div>
+              <span class="detail-param__label">Parkování</span>
+              <span class="detail-param__val">Podzemní garáž + stání venku</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABS -->
+        <div class="detail-tabs reveal" id="detailTabs">
+          <div class="tabs__nav" role="tablist">
+            <button class="tab-btn active" role="tab" data-tab="byty" aria-selected="true">Dostupné byty</button>
+            <button class="tab-btn" role="tab" data-tab="dispozice" aria-selected="false">Půdorysy</button>
+            <button class="tab-btn" role="tab" data-tab="vybaveni" aria-selected="false">Vybavení</button>
+            <button class="tab-btn" role="tab" data-tab="lokalita" aria-selected="false">Lokalita</button>
+          </div>
+
+          <!-- TAB: BYTY -->
+          <div class="tab-panel active" id="tab-byty" role="tabpanel">
+            <div class="units-filter">
+              <button class="filter-btn active" data-filter="all">Vše</button>
+              <button class="filter-btn" data-filter="1kk">1+kk</button>
+              <button class="filter-btn" data-filter="2kk">2+kk</button>
+              <button class="filter-btn" data-filter="3kk">3+kk</button>
+              <button class="filter-btn" data-filter="4kk">4+kk</button>
+            </div>
+            <div class="units-table">
+              <div class="units-table__head">
+                <span>Byt</span>
+                <span>Dispozice</span>
+                <span>Podlaží</span>
+                <span>Plocha</span>
+                <span>Cena</span>
+                <span>Stav</span>
+                <span></span>
+              </div>
+              <!-- 1+kk -->
+              <div class="unit-row" data-type="1kk">
+                <span class="unit-row__id">A101</span>
+                <span class="unit-row__type">1+kk</span>
+                <span class="unit-row__floor">1. NP</span>
+                <span class="unit-row__area">36 m²</span>
+                <span class="unit-row__price">3 490 000 Kč</span>
+                <span class="unit-badge unit-badge--free">Volný</span>
+                <a href="#kontakt" class="unit-row__cta">Mám zájem</a>
+              </div>
+              <div class="unit-row" data-type="1kk">
+                <span class="unit-row__id">B204</span>
+                <span class="unit-row__type">1+kk</span>
+                <span class="unit-row__floor">2. NP</span>
+                <span class="unit-row__area">38 m²</span>
+                <span class="unit-row__price">3 650 000 Kč</span>
+                <span class="unit-badge unit-badge--free">Volný</span>
+                <a href="#kontakt" class="unit-row__cta">Mám zájem</a>
+              </div>
+              <!-- 2+kk -->
+              <div class="unit-row" data-type="2kk">
+                <span class="unit-row__id">A203</span>
+                <span class="unit-row__type">2+kk</span>
+                <span class="unit-row__floor">2. NP</span>
+                <span class="unit-row__area">54 m²</span>
+                <span class="unit-row__price">4 890 000 Kč</span>
+                <span class="unit-badge unit-badge--reserved">Rezervováno</span>
+                <a href="#kontakt" class="unit-row__cta unit-row__cta--dim">Detail</a>
+              </div>
+              <div class="unit-row" data-type="2kk">
+                <span class="unit-row__id">C301</span>
+                <span class="unit-row__type">2+kk</span>
+                <span class="unit-row__floor">3. NP</span>
+                <span class="unit-row__area">57 m²</span>
+                <span class="unit-row__price">5 120 000 Kč</span>
+                <span class="unit-badge unit-badge--free">Volný</span>
+                <a href="#kontakt" class="unit-row__cta">Mám zájem</a>
+              </div>
+              <div class="unit-row" data-type="2kk">
+                <span class="unit-row__id">C302</span>
+                <span class="unit-row__type">2+kk</span>
+                <span class="unit-row__floor">3. NP</span>
+                <span class="unit-row__area">59 m²</span>
+                <span class="unit-row__price">5 290 000 Kč</span>
+                <span class="unit-badge unit-badge--free">Volný</span>
+                <a href="#kontakt" class="unit-row__cta">Mám zájem</a>
+              </div>
+              <!-- 3+kk -->
+              <div class="unit-row" data-type="3kk">
+                <span class="unit-row__id">B401</span>
+                <span class="unit-row__type">3+kk</span>
+                <span class="unit-row__floor">4. NP</span>
+                <span class="unit-row__area">78 m²</span>
+                <span class="unit-row__price">6 850 000 Kč</span>
+                <span class="unit-badge unit-badge--free">Volný</span>
+                <a href="#kontakt" class="unit-row__cta">Mám zájem</a>
+              </div>
+              <div class="unit-row" data-type="3kk">
+                <span class="unit-row__id">A402</span>
+                <span class="unit-row__type">3+kk</span>
+                <span class="unit-row__floor">4. NP</span>
+                <span class="unit-row__area">82 m²</span>
+                <span class="unit-row__price">7 190 000 Kč</span>
+                <span class="unit-badge unit-badge--sold">Prodáno</span>
+                <a href="#kontakt" class="unit-row__cta unit-row__cta--dim">Detail</a>
+              </div>
+              <!-- 4+kk -->
+              <div class="unit-row" data-type="4kk">
+                <span class="unit-row__id">D501</span>
+                <span class="unit-row__type">4+kk</span>
+                <span class="unit-row__floor">5. NP (penthouse)</span>
+                <span class="unit-row__area">118 m²</span>
+                <span class="unit-row__price">11 490 000 Kč</span>
+                <span class="unit-badge unit-badge--free">Volný</span>
+                <a href="#kontakt" class="unit-row__cta">Mám zájem</a>
+              </div>
+              <div class="unit-row" data-type="4kk">
+                <span class="unit-row__id">D502</span>
+                <span class="unit-row__type">4+kk</span>
+                <span class="unit-row__floor">5. NP (penthouse)</span>
+                <span class="unit-row__area">124 m²</span>
+                <span class="unit-row__price">12 200 000 Kč</span>
+                <span class="unit-badge unit-badge--reserved">Rezervováno</span>
+                <a href="#kontakt" class="unit-row__cta unit-row__cta--dim">Detail</a>
+              </div>
+            </div>
+            <p class="units-note">* Ceny jsou včetně DPH. Parkovací stání v podzemní garáži od 350 000 Kč, sklepní koje od 45 000 Kč.</p>
+          </div>
+
+          <!-- TAB: DISPOZICE -->
+          <div class="tab-panel" id="tab-dispozice" role="tabpanel">
+            <div class="floorplans">
+              <div class="floorplan-selector">
+                <button class="fp-btn active" data-plan="fp1">1+kk · 36–38 m²</button>
+                <button class="fp-btn" data-plan="fp2">2+kk · 54–59 m²</button>
+                <button class="fp-btn" data-plan="fp3">3+kk · 78–82 m²</button>
+                <button class="fp-btn" data-plan="fp4">4+kk · 118–124 m²</button>
+              </div>
+              <div class="floorplan-view" id="floorplanView">
+                <div class="floorplan-img" id="fp1">
+                  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop&q=80" alt="Půdorys 1+kk" />
+                  <div class="floorplan-meta">
+                    <div class="fp-meta-item"><strong>Plocha bytu</strong><span>36 – 38 m²</span></div>
+                    <div class="fp-meta-item"><strong>Terasa / balkon</strong><span>6 – 9 m²</span></div>
+                    <div class="fp-meta-item"><strong>Podlaží</strong><span>1. – 4. NP</span></div>
+                    <div class="fp-meta-item"><strong>Cena od</strong><span>3 490 000 Kč</span></div>
+                  </div>
+                </div>
+                <div class="floorplan-img hidden" id="fp2">
+                  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop&q=80" alt="Půdorys 2+kk" />
+                  <div class="floorplan-meta">
+                    <div class="fp-meta-item"><strong>Plocha bytu</strong><span>54 – 59 m²</span></div>
+                    <div class="fp-meta-item"><strong>Terasa / balkon</strong><span>8 – 14 m²</span></div>
+                    <div class="fp-meta-item"><strong>Podlaží</strong><span>2. – 4. NP</span></div>
+                    <div class="fp-meta-item"><strong>Cena od</strong><span>4 890 000 Kč</span></div>
+                  </div>
+                </div>
+                <div class="floorplan-img hidden" id="fp3">
+                  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop&q=80" alt="Půdorys 3+kk" />
+                  <div class="floorplan-meta">
+                    <div class="fp-meta-item"><strong>Plocha bytu</strong><span>78 – 82 m²</span></div>
+                    <div class="fp-meta-item"><strong>Terasa / balkon</strong><span>12 – 18 m²</span></div>
+                    <div class="fp-meta-item"><strong>Podlaží</strong><span>3. – 4. NP</span></div>
+                    <div class="fp-meta-item"><strong>Cena od</strong><span>6 850 000 Kč</span></div>
+                  </div>
+                </div>
+                <div class="floorplan-img hidden" id="fp4">
+                  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop&q=80" alt="Půdorys 4+kk penthouse" />
+                  <div class="floorplan-meta">
+                    <div class="fp-meta-item"><strong>Plocha bytu</strong><span>118 – 124 m²</span></div>
+                    <div class="fp-meta-item"><strong>Terasa</strong><span>32 – 40 m²</span></div>
+                    <div class="fp-meta-item"><strong>Podlaží</strong><span>5. NP (penthouse)</span></div>
+                    <div class="fp-meta-item"><strong>Cena od</strong><span>11 490 000 Kč</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: VYBAVENÍ -->
+          <div class="tab-panel" id="tab-vybaveni" role="tabpanel">
+            <div class="amenities">
+              <div class="amenity-group">
+                <h4 class="amenity-group__title">Interiér bytů</h4>
+                <ul class="amenity-list">
+                  <li>Podlahové vytápění v celém bytě</li>
+                  <li>Velkoformátová dlažba a dřevěné podlahy</li>
+                  <li>Kuchyně s myčkou a varnou deskou na indukci</li>
+                  <li>Koupelna s italskou keramikou</li>
+                  <li>Rekuperace vzduchu (nucené větrání)</li>
+                  <li>Předinstalace pro klimatizaci</li>
+                  <li>Inteligentní elektroinstalace (příprava pro Smart Home)</li>
+                </ul>
+              </div>
+              <div class="amenity-group">
+                <h4 class="amenity-group__title">Budova &amp; společné prostory</h4>
+                <ul class="amenity-list">
+                  <li>Bezbariérový přístup, výtah</li>
+                  <li>Podzemní garáže s elektrickým nabíjením</li>
+                  <li>Kolárna a kočárkárna</li>
+                  <li>Zabezpečení kamerovým systémem</li>
+                  <li>Video-domovní telefon</li>
+                  <li>Sdílená terasa na střeše (penthouse sekce)</li>
+                </ul>
+              </div>
+              <div class="amenity-group">
+                <h4 class="amenity-group__title">Exteriér &amp; okolí</h4>
+                <ul class="amenity-list">
+                  <li>Vnitřní dvůr s relaxační zahradou</li>
+                  <li>Dětské hřiště a workoutová zóna</li>
+                  <li>Příprava pro dobíjení e-kol</li>
+                  <li>200 m od lázeňského parku</li>
+                  <li>Přímý přístup k turistickým trasám</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: LOKALITA -->
+          <div class="tab-panel" id="tab-lokalita" role="tabpanel">
+            <div class="location">
+              <div class="location__map">
+                <iframe
+                  title="Mapa lokality Luhačovice"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10544.738!2d17.7547!3d49.0979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714b14d0d7e51a1%3A0x400af0f661640d0!2sLuha%C4%8Dovice!5e0!3m2!1scs!2scz!4v1"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+              <div class="location__pois">
+                <div class="poi-group">
+                  <h4>Příroda &amp; volný čas</h4>
+                  <div class="poi-item"><span class="poi-dist">2 min</span><span>Lázeňský park</span></div>
+                  <div class="poi-item"><span class="poi-dist">5 min</span><span>Aquapark Luhačovice</span></div>
+                  <div class="poi-item"><span class="poi-dist">10 min</span><span>Golfové hřiště</span></div>
+                  <div class="poi-item"><span class="poi-dist">15 min</span><span>Bílé Karpaty — turistika</span></div>
+                </div>
+                <div class="poi-group">
+                  <h4>Doprava</h4>
+                  <div class="poi-item"><span class="poi-dist">3 min</span><span>Autobusové nádraží</span></div>
+                  <div class="poi-item"><span class="poi-dist">20 min</span><span>Vlak (Uherský Brod)</span></div>
+                  <div class="poi-item"><span class="poi-dist">30 min</span><span>Zlín — centrum</span></div>
+                  <div class="poi-item"><span class="poi-dist">50 min</span><span>Brno (D1)</span></div>
+                </div>
+                <div class="poi-group">
+                  <h4>Občanská vybavenost</h4>
+                  <div class="poi-item"><span class="poi-dist">1 min</span><span>Supermarket Billa</span></div>
+                  <div class="poi-item"><span class="poi-dist">3 min</span><span>Základní škola</span></div>
+                  <div class="poi-item"><span class="poi-dist">5 min</span><span>Nemocnice Luhačovice</span></div>
+                  <div class="poi-item"><span class="poi-dist">5 min</span><span>Restaurace, kavárny</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- POSTUP VÝSTAVBY -->
+        <section class="build-progress reveal">
+          <p class="section__eyebrow">Aktuální stav</p>
+          <h2 class="build-progress__title">Postup výstavby</h2>
+          <div class="progress-steps">
+            <div class="progress-step done">
+              <div class="progress-step__dot"></div>
+              <div class="progress-step__body">
+                <strong>Územní rozhodnutí</strong>
+                <span>Říjen 2024</span>
+              </div>
+            </div>
+            <div class="progress-step done">
+              <div class="progress-step__dot"></div>
+              <div class="progress-step__body">
+                <strong>Stavební povolení</strong>
+                <span>Leden 2025</span>
+              </div>
+            </div>
+            <div class="progress-step done">
+              <div class="progress-step__dot"></div>
+              <div class="progress-step__body">
+                <strong>Zahájení výstavby</strong>
+                <span>Březen 2025</span>
+              </div>
+            </div>
+            <div class="progress-step active">
+              <div class="progress-step__dot"></div>
+              <div class="progress-step__body">
+                <strong>Hrubá stavba</strong>
+                <span>Probíhá — duben 2026</span>
+              </div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__dot"></div>
+              <div class="progress-step__body">
+                <strong>Dokončovací práce</strong>
+                <span>Plán: červen 2026</span>
+              </div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__dot"></div>
+              <div class="progress-step__body">
+                <strong>Kolaudace &amp; předání</strong>
+                <span>Plán: září 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar-track">
+              <div class="progress-bar-fill" style="width: 58%"></div>
+            </div>
+            <span class="progress-bar-label">58 % dokončeno</span>
+          </div>
+        </section>
+
+      </div><!-- /detail-content -->
+
+      <!-- PRAVÝ SLOUPEC — STICKY FORMULÁŘ -->
+      <aside class="detail-sidebar">
+        <div class="sidebar-card reveal" id="kontakt">
+          <p class="section__eyebrow">Nezávazná poptávka</p>
+          <h2 class="sidebar-card__title">Mám zájem<br />o tento projekt</h2>
+          <p class="sidebar-card__sub">Ozveme se do 24 hodin a zodpovíme veškeré dotazy.</p>
+
+          <form class="sidebar-form" id="sidebarForm" novalidate>
+            <div class="form__group">
+              <label for="s-name">Jméno a příjmení *</label>
+              <input type="text" id="s-name" name="name" placeholder="Jan Novák" required />
+            </div>
+            <div class="form__group">
+              <label for="s-email">E-mail *</label>
+              <input type="email" id="s-email" name="email" placeholder="jan@email.cz" required />
+            </div>
+            <div class="form__group">
+              <label for="s-phone">Telefon</label>
+              <input type="tel" id="s-phone" name="phone" placeholder="+420 xxx xxx xxx" />
+            </div>
+            <div class="form__group">
+              <label for="s-unit">Zájem o dispozici</label>
+              <select id="s-unit" name="unit">
+                <option value="">Vyberte dispozici</option>
+                <option>1+kk (od 3 490 000 Kč)</option>
+                <option>2+kk (od 4 890 000 Kč)</option>
+                <option>3+kk (od 6 850 000 Kč)</option>
+                <option>4+kk / penthouse (od 11 490 000 Kč)</option>
+                <option>Investor — více jednotek</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="s-msg">Dotaz / zpráva</label>
+              <textarea id="s-msg" name="message" rows="3" placeholder="Máte dotaz k projektu?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Odeslat poptávku</button>
+            <p class="form__note">Souhlasíte se zpracováním osobních údajů dle <a href="#">GDPR</a>.</p>
+            <div class="form__success" id="sidebarSuccess" hidden>
+              ✓ Děkujeme! Brzy se vám ozveme.
+            </div>
+          </form>
+
+          <div class="sidebar-card__divider"></div>
+
+          <div class="sidebar-contact">
+            <p class="sidebar-contact__label">Nebo zavolejte přímo</p>
+            <a href="tel:+420800000000" class="sidebar-contact__phone">+420 800 000 000</a>
+            <p class="sidebar-contact__agent">
+              <strong>Ing. Martin Válek</strong>
+              <span>Obchodní manažer projektu</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- MINI SHARE / SAVE -->
+        <div class="sidebar-actions reveal">
+          <button class="sidebar-action-btn" id="btnSave">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 15l-6-6a4 4 0 015.66-5.66L9 4l.34-.34A4 4 0 0115 9l-6 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            Uložit projekt
+          </button>
+          <button class="sidebar-action-btn" id="btnShare">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="14" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/><circle cx="14" cy="14" r="2" stroke="currentColor" stroke-width="1.5"/><circle cx="4" cy="9" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 8l6-3M6 10l6 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Sdílet
+          </button>
+          <a href="index.html#projekty" class="sidebar-action-btn">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M11 4H4v10h10V7m-3-3l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Další projekty
+          </a>
+        </div>
+      </aside>
+
+    </div><!-- /detail-layout -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-afg">AFG</span>
+        <span class="nav__logo-re">Real Estate</span>
+        <p>Stavíme místa, kde chcete žít.</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="index.html#investice">Investice</a>
+        <a href="index.html#projekty">Projekty</a>
+        <a href="index.html#spoluprace">Spolupráce</a>
+        <a href="index.html#proces">Proces</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <div class="footer__legal">
+        <span>© 2026 AFG Real Estate s.r.o.</span>
+        <a href="#">Ochrana osobních údajů</a>
+        <a href="#">Obchodní podmínky</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Zpět nahoru">↑</a>
+
+  <script src="main.js"></script>
+  <script src="detail.js"></script>
+</body>
+</html>
