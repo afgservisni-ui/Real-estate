@@ -15,18 +15,26 @@
   /* ── Mobile burger ── */
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
+  const navOverlay = document.getElementById('navOverlay');
+
+  const closeMenu = () => {
+    burger.classList.remove('open');
+    navLinks.classList.remove('open');
+    navOverlay.classList.remove('open');
+    nav.classList.remove('menu-open');
+    document.body.style.overflow = '';
+  };
+
   burger.addEventListener('click', () => {
     const open = burger.classList.toggle('open');
     navLinks.classList.toggle('open', open);
+    navOverlay.classList.toggle('open', open);
+    nav.classList.toggle('menu-open', open);
     document.body.style.overflow = open ? 'hidden' : '';
   });
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      burger.classList.remove('open');
-      navLinks.classList.remove('open');
-      document.body.style.overflow = '';
-    });
-  });
+
+  navOverlay.addEventListener('click', closeMenu);
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
   /* ── Scroll reveal ── */
   const revealObserver = new IntersectionObserver(
